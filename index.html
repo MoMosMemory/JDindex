@@ -543,11 +543,11 @@
 				</ul>
 				<!--banner-->
 				<div class="main-banner  lf">
-					<ul  id="slider-Img-banner"  class="slider-Img"></ul>
+					<ul  id="slider-Img-banner"  class="slider-Img clearfix"></ul>
 					<!--数字序列 绝对定位-->
 					<ul class="slide-bar"></ul>
 					<!-- 左右按钮 -->
-					<div  id="slider-page">
+					<div  class="slider-page">
 						<a href="javascript:void(0)"  class="slider-prev">&lt;</a>
 						<a href="javascript:void(0)"  class="slider-next">&gt;</a>
 					</div>
@@ -703,23 +703,17 @@
 					</a>
 				</div>
 			</div>
-			<div class="bottom-banner">
-				<div class="today-recommend">
+			<div class="bottom-banner clearfix">
+				<div class="today-recommend"></div>
+				<div class="recommend-list-box">
+					<ul id="recommend-list" class="slider-Img clearfix"></ul>
+					<!-- 左右按钮 -->
+					<div  class="slider-page">
+						<a href="javascript:void(0)"  class="slider-prev">&lt;</a>
+						<a href="javascript:void(0)"  class="slider-next">&gt;</a>
+					</div>
 				</div>
-				<ul class="lf">
-					<li>
-						<a href="#"><img src="Images/index/banner_4.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="Images/index/banner_5.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="Images/index/banner_6.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="Images/index/banner_7.png" /></a>
-					</li>
-				</ul>
+
 			</div>
 		</article>
 		<!--5、网页主体section #main-->
@@ -955,71 +949,96 @@
 					</div>
 				</div>
 			</div>
+			<!-- 楼层 -->
+			<ul  id="elevator">
+				<li>
+					<a href="#">1F</a>
+					<a href="#"  class="etitle">服饰</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">2F</a>
+					<a href="#"  class="etitle">美妆</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">3F</a>
+					<a href="#"  class="etitle">手机</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">4F</a>
+					<a href="#"  class="etitle">家电</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">5F</a>
+					<a href="#"  class="etitle">数码</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">6F</a>
+					<a href="#"  class="etitle">运动</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">7F</a>
+					<a href="#"  class="etitle">居家</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">8F</a>
+					<a href="#"  class="etitle">母婴</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">9F</a>
+					<a href="#"  class="etitle">食品</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">10F</a>
+					<a href="#"  class="etitle">图书</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">11F</a>
+					<a href="#"  class="etitle">车品</a>
+					<i></i>
+				</li>
+				<li>
+					<a href="#">12F</a>
+					<a href="#"  class="etitle">服务</a>
+				</li>
+			</ul>
 			<!--3 1F 服装鞋品 -->
 			<div class="floor">
 				<!-- 图片条 -->
 				<div class="floor-banner">
-					<a href="#">
-						<img src="Images/index/floor_banner_1.jpg" />
-					</a>
-					<a href="#">
-						<img src="Images/index/floor_banner_2.jpg" />
-					</a>
-					<a href="#">
-						<img src="Images/index/floor_banner_3.jpg" />
-					</a>
+					<a href="#"><img src="Images/index/floor_banner_1.jpg" /></a>
+					<a href="#"><img src="Images/index/floor_banner_2.jpg" /></a>
+					<a href="#"><img src="Images/index/floor_banner_3.jpg" /></a>
 				</div>
 				<!-- 标题 -->
 				<div class="m-title">
-					<h2>
-						<i>1F</i>
-						<span>服装鞋包</span>
-					</h2>
+					<h2><i>1F</i><span>服装鞋包</span></h2>
 					<ul class="m-tabs">
-						<li class="current">
-							<a href="#">大牌</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">男装</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">女装</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">鞋靴</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">箱包</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">内衣配饰</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">珠宝首饰</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">奢品礼品</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">奢华腕表</a>
-						</li>
+						<li class="current"><a href="#brand">大牌</a></li>
+						<li><s></s><a href="#maleCloth">男装</a></li>
+						<li><s></s><a href="#femaleCloth">女装</a></li>
+						<li><s></s><a href="#shoes">鞋靴</a></li>
+						<li><s></s><a href="#luggage">箱包</a></li>
+						<li><s></s><a href="#underwaist">内衣配饰</a></li>
+						<li><s></s><a href="#jewels">珠宝首饰</a></li>
+						<li><s></s><a href="#gift">奢品礼品</a></li>
+						<li><s></s><a href="#watches">奢华腕表</a></li>
 					</ul>
 				</div>
 				<div class="m-content">
-					<!-- 左侧总分类 -->
-					<div class="aside-cate">
+					<!--左侧-->
+					<aside class="aside-cate">
 						<div class="cate-details">
-							<a href="#">
-								<img src="Images/index/floor_1.jpg" />
-							</a>
+							<a href="#"><img src="Images/index/floor_1.jpg" /></a>
 							<!-- 遮盖层 -->
 							<div class="cover">
 								<div class="cover1"></div>
@@ -1096,168 +1115,1053 @@
 								<h3>送福袋&nbsp;低至3折</h3>
 							</div>
 						</a>
+					</aside>
+					<!--右侧内容-->
+					<div class="m-content-box">
+						<!--1、大牌-->
+						<div id="brand" class="show">
+							<ul class="show-list1">
+								<li><a href="#"><img src="Images/index/floor_3.jpg" /></a></li>
+								<li class="show-slider">
+									<ul  id="slider-Img-1F"  class="slider-Img clearfix"></ul>
+									<!--数字序列 绝对定位-->
+									<ul class="slide-bar"></ul>
+									<!-- 左右按钮 -->
+									<div  class="slider-page">
+										<a href="javascript:void(0)"  class="slider-prev">&lt;</a>
+										<a href="javascript:void(0)"  class="slider-next">&gt;</a>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_5.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>直击巴展</h1>
+											<h3>大牌手表满减</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="show-list2">
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_6.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>踏春箱伴&nbsp;领券满减</h1>
+											<h3>最高399减100</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_7.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春潮盛宴&nbsp;女包尚新</h1>
+											<h3>满399-100</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_8.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>许你一场世纪婚礼</h1>
+											<h3>杨幂代言款</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_9.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>做个美新娘</h1>
+											<h3>大牌分期免息</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="show-list3">
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_10.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春夏时装周</h1>
+											<h3>你的摩登时代</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_11.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春夏爆款&nbsp;强势巨献</h1>
+											<h3>低至74.5元</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_12.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>硬汉派对</h1>
+											<h3>199减20</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--2、男装-->
+						<div id="maleCloth" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-2.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-3.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-4.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-5.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-6.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-7.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/maleCloth-8.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--3、女装-->
+						<div id="femaleCloth" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/femaleCloth-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--4、鞋靴-->
+						<div id="shoes" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/shoes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--5、箱包-->
+						<div id="luggage" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/luggage-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--6、内衣饰品-->
+						<div id="underwaist" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/underwaist-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--7、珠宝首饰-->
+						<div id="jewels" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/jewel-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--8、奢华礼品-->
+						<div id="gift" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/gift-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--9、奢华腕表-->
+						<div id="watches" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/watch-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
 					</div>
-					<ul class="show-list1">
-						<li>
-							<a href="#"><img src="Images/index/floor_3.jpg" /></a>
-						</li>
-						<li class="show-slider">
-							<ul  id="slider-Img-1F"  class="slider-Img"></ul>
-							<!--数字序列 绝对定位-->
-							<ul class="slide-bar"></ul>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_5.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>直击巴展</h1>
-									<h3>大牌手表满减</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<ul class="show-list2">
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_6.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>踏春箱伴&nbsp;领券满减</h1>
-									<h3>最高399减100</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_7.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春潮盛宴&nbsp;女包尚新</h1>
-									<h3>满399-100</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_8.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>许你一场世纪婚礼</h1>
-									<h3>杨幂代言款</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_9.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>做个美新娘</h1>
-									<h3>大牌分期免息</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<ul class="show-list3">
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_10.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春夏时装周</h1>
-									<h3>你的摩登时代</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_11.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春夏爆款&nbsp;强势巨献</h1>
-									<h3>低至74.5元</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_12.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>硬汉派对</h1>
-									<h3>199减20</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 			<!--4 2F 个户美妆 -->
 			<div class="floor">
 				<!-- 图片条 -->
 				<div class="floor-banner">
-					<a href="#">
-						<img src="Images/index/floor_banner_1.jpg" />
-					</a>
-					<a href="#">
-						<img src="Images/index/floor_banner_2.jpg" />
-					</a>
-					<a href="#">
-						<img src="Images/index/floor_banner_3.jpg" />
-					</a>
+					<ul class="brand-list">
+						<li><a href="#"><img src="Images/brand_icon_15.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_16.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_17.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_18.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_19.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_20.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_21.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_22.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_23.png" /></a></li>
+						<li><a href="#"><img src="Images/brand_icon_24.png" /></a></li>
+					</ul>
 				</div>
 				<!-- 标题 -->
 				<div class="m-title">
-					<h2>
-						<i>2F</i>
-						<span>个户美妆</span>
-					</h2>
+					<h2><i>2F</i><span>个户美妆</span></h2>
 					<ul class="m-tabs">
-						<li class="current">
-							<a href="#">热门</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">国际大牌</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">国际名品</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">个人护理</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">清洁用品</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">纸巾湿品</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">香水彩妆</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">热销面膜</a>
-						</li>
-						<li>
-							<s></s>
-							<a href="#">男式精品</a>
-						</li>
+						<li class="current"><a href="#hot">热门</a></li>
+						<li><s></s><a href="#international">国际大牌</a></li>
+						<li><s></s><a href="#madeinChina ">国妆名品</a></li>
+						<li><s></s><a href="#personalCare">个人护理</a></li>
+						<li><s></s><a href="#cleaningProduct">清洁用品</a></li>
+						<li><s></s><a href="#paperWipes">纸品湿巾</a></li>
+						<li><s></s><a href="#perfume">香水彩妆</a></li>
+						<li><s></s><a href="#faceMask">热销面膜</a></li>
+						<li><s></s><a href="#menBoutique">男士精品</a></li>
 					</ul>
 				</div>
 				<div class="m-content">
-					<!-- 左侧总分类 -->
-					<div class="aside-cate">
+					<!--左侧-->
+					<aside class="aside-cate">
 						<div class="cate-details">
-							<a href="#">
-								<img src="Images/index/floor_1.jpg" />
-							</a>
+							<a href="#"><img src="Images/index/floor_1.jpg" /></a>
 							<!-- 遮盖层 -->
 							<div class="cover">
 								<div class="cover1"></div>
@@ -1334,120 +2238,1014 @@
 								<h3>送福袋&nbsp;低至3折</h3>
 							</div>
 						</a>
+					</aside>
+					<!--右侧内容-->
+					<div class="m-content-box">
+						<!--1、热门-->
+						<div id="hot" class="show">
+							<ul class="show-list1">
+								<li><a href="#"><img src="Images/index/floor_3.jpg" /></a></li>
+								<li class="show-slider">
+									<ul  id="slider-Img-2F"  class="slider-Img clearfix"></ul>
+									<!--数字序列 绝对定位-->
+									<ul class="slide-bar"></ul>
+									<!-- 左右按钮 -->
+									<div  class="slider-page">
+										<a href="javascript:void(0)"  class="slider-prev">&lt;</a>
+										<a href="javascript:void(0)"  class="slider-next">&gt;</a>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_5.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>直击巴展</h1>
+											<h3>大牌手表满减</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="show-list2">
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_6.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>踏春箱伴&nbsp;领券满减</h1>
+											<h3>最高399减100</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_7.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春潮盛宴&nbsp;女包尚新</h1>
+											<h3>满399-100</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_8.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>许你一场世纪婚礼</h1>
+											<h3>杨幂代言款</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_9.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>做个美新娘</h1>
+											<h3>大牌分期免息</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="show-list3">
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_10.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春夏时装周</h1>
+											<h3>你的摩登时代</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_11.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>春夏爆款&nbsp;强势巨献</h1>
+											<h3>低至74.5元</h3>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="Images/index/floor_12.png" />
+										<!-- 文字 -->
+										<div class="txt-cover">
+											<h1>硬汉派对</h1>
+											<h3>199减20</h3>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--2、国际大牌-->
+						<div id="international" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/international-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--3、国妆名品-->
+						<div id="madeinChina" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/madeinChina-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--4、个人护理-->
+						<div id="personalCare" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/personalCare-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--5、清洁用品-->
+						<div id="cleaningProduct" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/cleaningProduct-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--6、纸品湿巾-->
+						<div id="paperWipes" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/paperWipes-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--7、香水彩妆-->
+						<div id="perfume" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/perfume-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--8、热销面膜-->
+						<div id="faceMask" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/faceMask-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
+						<!--9、男士精品-->
+						<div id="menBoutique" class="tab-content">
+							<ul class="product-list">
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">布先生商务休闲翻领短袖T恤</a>
+											</div>
+											<p class="price">&yen;268.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">骆驼青年条纹商务休闲绅士短袖上衣T恤</a>
+											</div>
+											<p class="price">&yen;169.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">班尼路翻领纯色短袖polo衫</a></div>
+											<p class="price">&yen;89.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">太平鸟男士圆领印花短袖T恤</a></div>
+											<p class="price">&yen;139.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">Dickies修身工装长裤休闲裤男直筒</a></div>
+											<p class="price">&yen;239.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">威可多时尚休闲裤 直筒常规休闲裤</a></div>
+											<p class="price">&yen;238.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname"><a href="#" title="">真维斯弹性雨纹基本五袋款牛仔裤</a></div>
+											<p class="price">&yen;99.00</p>
+										</dd>
+									</dl>
+								</li>
+								<li class="items">
+									<dl class="p10">
+										<dt>
+											<a href="#"><img src="Images/index/menBoutique-1.jpg" alt=""></a>
+										</dt>
+										<dd>
+											<div class="pname">
+												<a href="#" title="">马克华菲破洞水洗磨白牛仔裤</a>
+											</div>
+											<p class="price">&yen;178.00</p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="product-list">
+								<li><a href="#">
+									<img src="Images/index/maleCloth-9.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-10.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-11.jpg" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="Images/index/maleCloth-12.jpg" alt="">
+								</a></li>
+							</ul>
+						</div>
 					</div>
-					<ul class="show-list1">
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_3.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春季内衣趴</h1>
-									<h3>高至满299减100</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_4.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>男包箱包季</h1>
-									<h3>199-50,399-100</h3>
-								</div>
-							</a>
-							<!-- 滚动条 -->
-							<P class="slide-bar">
-								<a href="#" class="current"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-							</p>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_5.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>直击巴展</h1>
-									<h3>大牌手表满减</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<ul class="show-list2">
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_6.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>踏春箱伴&nbsp;领券满减</h1>
-									<h3>最高399减100</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_7.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春潮盛宴&nbsp;女包尚新</h1>
-									<h3>满399-100</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_8.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>许你一场世纪婚礼</h1>
-									<h3>杨幂代言款</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_9.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>做个美新娘</h1>
-									<h3>大牌分期免息</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<ul class="show-list3">
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_10.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春夏时装周</h1>
-									<h3>你的摩登时代</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_11.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>春夏爆款&nbsp;强势巨献</h1>
-									<h3>低至74.5元</h3>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="Images/index/floor_12.png" />
-								<!-- 文字 -->
-								<div class="txt-cover">
-									<h1>硬汉派对</h1>
-									<h3>199减20</h3>
-								</div>
-							</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 			<!--5 3F 手机通讯 -->
@@ -1480,7 +3278,7 @@
 					<img src="Images/cahracter_4.png" />
 					<b>天天低价&nbsp;畅选无忧</b>
 				</li>
-			</div>
+			</ul>
 		</footer>
 		<!--7、页脚footer 购物指南#foot-service 宽度100%-->
 		<footer id="foot-service">
