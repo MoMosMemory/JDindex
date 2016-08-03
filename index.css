@@ -21,7 +21,10 @@ body{
 /*浮动*/
 .lf{float:left;}
 .rt{float:right;}
-.clear{clear:both;}
+.clear:before{
+	content:"";
+	display:table;
+}
 .clearfix:after{
 	content:"";
 	display:block;
@@ -931,6 +934,7 @@ ul.virtual-functions li{
 }
 /****************** 电梯  ***********************/
 #elevator{
+	display:none;
 	position:fixed;
 	top:50%;
 	left:35px;
@@ -1085,13 +1089,17 @@ ul.img-lists li:hover img{
 }
 	/*图片*/
 .m-title i{
+	position:relative;
 	display:inline-block;
 	width:21px;
 	height:25px;
-	padding-right:10px;
+	padding-right:15px;
 	color:#fff;
 	font:normal 12px/25px "microsoft yahei";
-	background:#fff url("Images/iconlist_1.png")no-repeat -144px -202px;
+	background:#fff url("Images/iconlist_1.png")no-repeat -144px -199px;
+}
+.m-title i.hover{
+	background:#fff url("Images/iconlist_1.png")no-repeat -144px -174px;
 }
 	/*标题标签*/
 .m-tabs{

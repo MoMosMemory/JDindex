@@ -18,16 +18,6 @@ window.addEventListener("load",function(){
 	tabToggle();
 });
 
-/*全局函数getElementTop,获取任意元素距页面顶部的总距离*/
-function  getElementTop(elem){
-	//获得当前元素距离父元素的top
-	var  elemTop = elem.offsetTop;
-	while((elem = elem.offsetParent) !== null){
-		elemTop += elem.offsetTop;
-	}
-	return  elemTop;
-}
-
 /*省份*/
 var prov=(function(prov){
 	var init=['北京','上海','天津','重庆','河北','山西','河南','辽宁','吉林','黑龙江','内蒙古','江苏','山东','安徽','浙江','福建','湖北','湖南','广东','广西','江西','四川','海南','贵州','云南','西藏','陕西','甘肃','青海','宁夏','新疆','台湾','香港','澳门','钓鱼岛','海外'];
@@ -314,4 +304,10 @@ function tabToggle(){
 		});
 	});
 }
+
+
+
+
+
+
 
